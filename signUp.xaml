@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="CalendarBot.signUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CalendarBot"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+
+        <Grid Margin="5,0,0,0">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <!--Title-->
+
+            <TextBlock Text="User Registration :" Grid.Row="0" FontSize="40"  Foreground="Black"/>
+
+
+
+            <!--UserName-->
+
+            <TextBlock Text="UserName :" Grid.Row="1" Foreground="Black"   Margin="0,25,0,0"/>
+
+            <TextBox Name="TxtUserName" BorderBrush="LightGray" Grid.Row="1" Margin="100,0,0,0" />
+
+
+
+            <!--Password-->
+
+            <TextBlock Text="Password: " Grid.Row="2" Margin="0,25,0,0" Foreground="Black" />
+
+            <PasswordBox Name="TxtPwd" BorderBrush="LightGray" Grid.Row="2" Margin="100,0,0,0" />
+
+
+            <!--Email-->
+
+            <TextBlock Text="Email: " Grid.Row="6" Margin="0,25,0,0" Foreground="Black" />
+
+            <TextBox Name="TxtEmail" BorderBrush="LightGray" Grid.Row="6" Margin="100,0,0,0" />
+
+
+
+            <!--Submit Button-->
+
+            <Button BorderBrush="Transparent"  Background="#FF30DABB" Content="Submit"  Name="BtnSubmit" Click="Submit_Click" Grid.Row="7"/>
+
+
+
+        </Grid>
+        <Frame Name="SignUpFrame" MinHeight="300">
+
+        </Frame>
+    </Grid>
+</Page>
